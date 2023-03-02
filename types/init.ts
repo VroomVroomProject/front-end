@@ -1,5 +1,3 @@
-function init() {
-  return 'test';
+export interface IchildrenProps {
+  children: React.ReactElement;
 }
-
-export default init;
