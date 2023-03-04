@@ -5,7 +5,7 @@ function Footer() {
     <footer className="flex justify-between">
       <div>
         <h3 className="text-green-700">VROOM</h3>
-        <ul className="flex">
+        <ul className="flex space-x-5 my-2">
           <li>우리소개</li>
           <li>개인정보처리방침</li>
           <li>이용약관</li>
@@ -15,9 +15,9 @@ function Footer() {
         </ul>
         <div className="text-xs">
           브룸렌탈㈜ 대표이사 누구야 <br></br>경기도 안양시 동안구 전파로 88
-          신원비젼타워 8층 / 서울본사: 서울시 강남구 테헤란로 422 KT타워 6~9층
+          신원비젼타워 8층 / 서울본사: 누군가의 집 주소요
           <br></br>
-          사업자등록번호 : 214-87-79183 / 통신판매업신고번호 :
+          사업자등록번호 : 123-455675-323 / 통신판매업신고번호 :
           제2010-경기안양-420호
         </div>
       </div>

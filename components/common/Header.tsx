@@ -70,7 +70,7 @@ function Header() {
           </li>
         </ul>
         <div>
-          <Link href={''}>
+          <Link href={'/my-page'}>
             <Image
               src={'/images/ico-mypage.png'}
               alt="유저 아이콘"
