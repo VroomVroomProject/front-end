@@ -9,7 +9,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
       <Layout>
-        <Component {...pageProps} />
+        <main className="min-h-screen">
+          <Component {...pageProps} />
+        </main>
       </Layout>
     </QueryClientProvider>
   );

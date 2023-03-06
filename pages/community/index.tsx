@@ -4,7 +4,7 @@ function Community() {
   return (
     <>
       {/* 검색 부분 */}
-      <div className="flex justify-center items-center flex-col pt-40">
+      <div className="flex justify-center items-center flex-col pt-32">
         <h2 className="text-3xl">커뮤니티</h2>
         <div className="flex py-10">
           <select
