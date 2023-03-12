@@ -93,7 +93,7 @@ function Header() {
           <ul key={i} className="w-56">
             {menu.map(list => (
               <li key={list} className="first:font-semibold">
-                <Link href={''}> {list}</Link>
+                <Link href={'/community'}> {list}</Link>
               </li>
             ))}
           </ul>

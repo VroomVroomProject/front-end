@@ -7,7 +7,7 @@ import Header from './Header';
 
 function Layout({ children }: IchildrenProps) {
   return (
-    <div className="max-w-screen-2xl min-w-min mx-auto py-10 ">
+    <div className="max-w-screen-2xl  mx-auto py-10 ">
       <Header />
       {children}
       <Footer />
