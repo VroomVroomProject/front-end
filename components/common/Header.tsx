@@ -41,7 +41,7 @@ function Header() {
     setMenuList([]);
   };
   return (
-    <header className={'relative h-20 bg-white  '}>
+    <header className={'relative h-20 bg-white z-10'}>
       <div className="flex">
         <div className="flex">
           <h1 className="font-bold text-3xl text-green-700">VROOM</h1>
