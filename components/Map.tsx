@@ -18,7 +18,7 @@ function Map() {
           37.5173319258532,
           127.047377408384,
         ),
-        level: 14,
+        level: 4,
       });
       containerRef.current = map;
       const marker1 = new window.kakao.maps.Marker({
@@ -72,8 +72,6 @@ function Map() {
         },
         () => {
           /* 위치정보 사용 불가능 */
-          console.log('dasdasds');
-
           setOpen(true);
         },
       );
