@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Init from '@/components/Init';
+import Calendar from '@/components/common/Calendar';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Init />
+      <Calendar />
     </>
   );
 }

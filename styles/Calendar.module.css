@@ -1,0 +1,21 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calendar .day {
+  width: 200px;
+}
+
+.calendar .date {
+  width: 100%;
+}
+.calendar .date span {
+  display: inline-block;
+  width: 200px;
+}
+
+.calendar p {
+  width: 200px;
+}
