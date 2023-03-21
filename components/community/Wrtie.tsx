@@ -50,7 +50,7 @@ function Wrtie() {
         />
       </div>
       <div className="mt-4">
-        <Button>
+        <Button cssType={2}>
           <>Save</>
         </Button>
       </div>

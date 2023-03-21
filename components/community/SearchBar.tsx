@@ -19,7 +19,7 @@ function SearchBar() {
         placeholder="검색어를 입력해주세요."
       />
       <div className="ml-2">
-        <Button>
+        <Button cssType={2}>
           <>검색</>
         </Button>
       </div>

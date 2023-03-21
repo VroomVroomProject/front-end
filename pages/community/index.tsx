@@ -1,3 +1,4 @@
+import Button from '@/components/common/Button';
 import Title from '@/components/common/Title';
 import SearchBar from '@/components/community/SearchBar';
 import Link from 'next/link';
@@ -12,9 +13,9 @@ function Community() {
       </Title>
       <div className="flex justify-end">
         <Link href={'/community/new'}>
-          <button className="focus:outline-none text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 ml-2 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-            글쓰기
-          </button>
+          <Button cssType={2}>
+            <>글쓰기</>
+          </Button>
         </Link>
       </div>
       {/* 커뮤 목록 */}
