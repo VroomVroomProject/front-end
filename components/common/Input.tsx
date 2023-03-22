@@ -23,10 +23,7 @@ function Input(
         type={type}
         {...(register && name && { ...register(name) })}
         className="
-        h-full
-        mt-1
         p-4
-        mb-4
         block
         w-full
         rounded-md
