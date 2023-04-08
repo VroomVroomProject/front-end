@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { v4 } from 'uuid';
 
 const MENU_TYPE = {
   new: 'new',
@@ -33,7 +34,6 @@ function Header() {
     }
     if (value === MENU_TYPE.support) {
       setMenuList(support);
-      return;
     }
   };
 
@@ -41,12 +41,12 @@ function Header() {
     setMenuList([]);
   };
   return (
-    <header className={'relative h-20 bg-white  '}>
+    <header className="relative h-20 bg-white  ">
       <div className="flex">
         <div className="flex">
           <h1 className="font-bold text-3xl text-green-700">VROOM</h1>
           <Image
-            src={'/images/car-wash.png'}
+            src="/images/car-wash.png"
             alt="자동차 로고"
             width={30}
             height={30}
@@ -54,25 +54,37 @@ function Header() {
         </div>
         <ul className="flex ml-96 mr-auto text-2xl">
           <li>
-            <button onMouseEnter={onMouseMenuEnter} value={MENU_TYPE.new}>
+            <button
+              onMouseEnter={onMouseMenuEnter}
+              value={MENU_TYPE.new}
+              type="button"
+            >
               신차 렌터카
             </button>
           </li>
           <li className="ml-12">
-            <button onMouseEnter={onMouseMenuEnter} value={MENU_TYPE.old}>
+            <button
+              onMouseEnter={onMouseMenuEnter}
+              value={MENU_TYPE.old}
+              type="button"
+            >
               중고 렌터카
             </button>
           </li>
           <li className="ml-12">
-            <button onMouseEnter={onMouseMenuEnter} value={MENU_TYPE.support}>
+            <button
+              onMouseEnter={onMouseMenuEnter}
+              value={MENU_TYPE.support}
+              type="button"
+            >
               고객 지원
             </button>
           </li>
         </ul>
         <div>
-          <Link href={''}>
+          <Link href="/">
             <Image
-              src={'/images/ico-mypage.png'}
+              src="/images/ico-mypage.png"
               alt="유저 아이콘"
               width={30}
               height={30}
@@ -89,11 +101,11 @@ function Header() {
         }
         onMouseLeave={onMouseMenuLeave}
       >
-        {menuList.map((menu, i) => (
-          <ul key={i} className="w-56">
+        {menuList.map(menu => (
+          <ul key={v4()} className="w-56">
             {menu.map(list => (
               <li key={list} className="first:font-semibold">
-                <Link href={'/community'}> {list}</Link>
+                <Link href="/community"> {list}</Link>
               </li>
             ))}
           </ul>

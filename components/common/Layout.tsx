@@ -1,9 +1,8 @@
-import { IchildrenProps } from '@/types/init';
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
-import Footer from './Footer';
-import Header from './Header';
+import Footer from '@/components/common/Footer';
+import Header from '@/components/common/Header';
+
+import { IchildrenProps } from '@/types/init';
 
 function Layout({ children }: IchildrenProps) {
   return (

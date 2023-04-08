@@ -1,14 +1,10 @@
-import { instance } from '@/service/instance';
 import React from 'react';
 import { useQuery } from 'react-query';
+import instance from '@/service/instance';
 
 function Init() {
-  const { isLoading, error, data } = useQuery(
-    'repoData',
-    async () =>
-      await instance.get(
-        'https://api.github.com/repos/tannerlinsley/react-query',
-      ),
+  const { isLoading, error } = useQuery('repoData', async () =>
+    instance.get('https://api.github.com/repos/tannerlinsley/react-query'),
   );
 
   if (error) {

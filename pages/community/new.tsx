@@ -1,6 +1,6 @@
-import Title from '@/components/common/Title';
 import dynamic from 'next/dynamic';
-import React, { useState, Suspense } from 'react';
+import React, { useState } from 'react';
+import Title from '@/components/common/Title';
 
 import 'react-quill/dist/quill.snow.css';
 
@@ -13,7 +13,7 @@ function New() {
   const [text, setText] = useState<string>('');
   return (
     <>
-      <Title title="글쓰기"></Title>
+      <Title title="글쓰기" />
       <div className="w-full mt-16 h-96">
         <ReactQuill
           style={{ height: '100%' }}

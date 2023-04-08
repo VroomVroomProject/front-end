@@ -1,7 +1,8 @@
-import Title from '@/components/common/Title';
-import SearchBar from '@/components/community/SearchBar';
 import Link from 'next/link';
 import React from 'react';
+
+import Title from '@/components/common/Title';
+import SearchBar from '@/components/community/SearchBar';
 
 function Community() {
   return (
@@ -11,8 +12,11 @@ function Community() {
         <SearchBar />
       </Title>
       <div className="flex justify-end">
-        <Link href={'/community/new'}>
-          <button className="focus:outline-none text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 ml-2 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+        <Link href="/community/new">
+          <button
+            type="button"
+            className="focus:outline-none text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 ml-2 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
             글쓰기
           </button>
         </Link>
@@ -20,8 +24,8 @@ function Community() {
       {/* 커뮤 목록 */}
       <table className="mx-auto my-6 w-full ">
         <colgroup>
-          <col width={'60%'} />
-          <col width={'20%'} />
+          <col width="60%" />
+          <col width="20%" />
         </colgroup>
         <thead className="h-20 bg-gray-200 ">
           <tr>
