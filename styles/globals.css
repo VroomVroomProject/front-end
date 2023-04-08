@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'NanumSquareLight', 'NanumSquare', 'NanumSquareBold',
+    'NanumSquareExtraBold', 'NanumSquareAcb', 'NanumSquareAceb',
+    'NanumSquareAcl', 'NanumSquareAcr';
+}
+
 body::-webkit-scrollbar {
   width: 8px; /* 스크롤바의 너비 */
 }
@@ -13,4 +19,11 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-track {
   background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
+}
+input {
+  font-family: initial !important;
+}
+
+.left-61 {
+  left: 61px;
 }

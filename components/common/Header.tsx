@@ -41,18 +41,26 @@ function Header() {
     setMenuList([]);
   };
   return (
-    <header className="relative h-20 bg-white  ">
-      <div className="flex">
-        <div className="flex">
-          <h1 className="font-bold text-3xl text-green-700">VROOM</h1>
+    <header className="relative h-20 bg-white z-10">
+      <div className="flex justify-center items-center">
+        <div className="flex relative">
+          <h1 className="font-bold  text-3xl text-green-700">VROOM</h1>
           <Image
+            className="absolute left-61 -top-4"
             src="/images/car-wash.png"
             alt="자동차 로고"
-            width={30}
-            height={30}
+            width={20}
+            height={20}
+          />
+          <Image
+            className="absolute left-10 -top-4"
+            src="/images/car-wash.png"
+            alt="자동차 로고"
+            width={20}
+            height={20}
           />
         </div>
-        <ul className="flex ml-96 mr-auto text-2xl">
+        <ul className="flex ml-auto mr-auto text-2xl ">
           <li>
             <button
               onMouseEnter={onMouseMenuEnter}
